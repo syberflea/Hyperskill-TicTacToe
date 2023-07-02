@@ -73,13 +73,9 @@ def make_turn(field):
     pass
 
 
-# cells = input("Enter cells: ")
-# cells_list = list(cells)
-
 print_board(cells_list)
 
 is_finished = False
-# is_placed = False
 who_moves = "X"
 while not is_finished:
     is_placed = False
@@ -92,9 +88,3 @@ while not is_finished:
         who_moves = "X"
     print_board(cells_list)
     is_finished = check_results()
-
-# while not is_placed:
-#     coordinates = take_coordinates()
-#     is_placed = place_coordinates(coordinates, 'X')
-#     if is_placed:
-#         print_board(cells_list)
